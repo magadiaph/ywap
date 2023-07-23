@@ -234,7 +234,7 @@ body {
 
 @media screen and (max-width:425px) {
     .nav-item {
-        font-size: xx-small;
+        font-size: x-small;
     }
 
     .event-type h1 {
