@@ -60,7 +60,7 @@ body {
         height: calc(100vh - 65px);
         width: 100%;
 
-        background: url(/MP1/images/bg-5.png);
+        background: url(/images/bg-5.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
