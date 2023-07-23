@@ -248,7 +248,11 @@ footer {
 @media screen and (max-width:768px) {
 
     .nav-item {
-        font-size: xx-small;
+        font-size: small;
+    }
+
+    .dropdown-item {
+        font-size: small;
     }
 
     .happening-now {
@@ -304,6 +308,10 @@ footer {
 }
 @media screen and (max-width:425px) {
     .nav-item {
+        font-size: x-small;
+    }
+
+    .dropdown-item {
         font-size: x-small;
     }
 

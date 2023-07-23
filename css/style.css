@@ -366,6 +366,14 @@ footer {
     }
 
 @media screen and (max-width:768px) {
+    .nav-item {
+        font-size: x-small;
+    }
+
+    .dropdown-item {
+        font-size: x-small;
+    }
+    
     /* Hero-Section */
         .hero-area  h1 {
             font-size: 60px;
@@ -439,6 +447,10 @@ footer {
 
 @media screen and (max-width:425px) {
     .nav-item {
+        font-size: x-small;
+    }
+
+    .dropdown-item {
         font-size: x-small;
     }
     
