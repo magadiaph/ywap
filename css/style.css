@@ -225,6 +225,10 @@ footer {
                 list-style-type: none;
             }
 
+            .footer-mid span {
+                font-style: italic;
+            }
+
             .footer-mid a {
                 color: var(--col-white);
 
@@ -387,5 +391,9 @@ footer {
             font-size: 7px;
         }
 
+        .footer-mid span {
+            font-size: 5px;
+            font-style: italic;
+        }
 }
 
