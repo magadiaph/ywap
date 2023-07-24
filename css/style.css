@@ -240,12 +240,15 @@ footer {
 
 
     .footer-bottom {
-        text-align: center;
-        margin-bottom: 5px;
+        display: flex;
+        justify-content: flex-end;
+        text-align: left;
+        margin: 5px 10px;
     }
 
         .fa-brands {
             color: var(--col-white);
+            margin: 0px 7px
         }
 
 @media screen and (max-width:768px) {
