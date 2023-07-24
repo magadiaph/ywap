@@ -227,6 +227,11 @@ footer {
                 list-style-type: none;
             }
 
+                .footer-mid li:hover {
+                    text-decoration: underline;
+                    text-decoration-color: var(--col-white);
+                }
+
             .footer-mid span {
                 font-style: italic;
             }
