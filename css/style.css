@@ -384,16 +384,15 @@ footer {
         
     /* Footer */
         .footer-mid {
-            font-size: 7px;
-        }
-
-        .footer-bottom {
-            font-size: 7px;
+            font-size: 5px;
         }
 
         .footer-mid span {
             font-size: 5px;
-            font-style: italic;
+        }
+
+        .footer-bottom {
+            font-size: 7px;
         }
 }
 

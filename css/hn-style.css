@@ -201,11 +201,14 @@ footer {
                 list-style-type: none;
             }
 
+            .footer-mid span {
+                font-style: italic;
+            }
+
             .footer-mid a {
                 color: var(--col-white);
 
                 text-decoration: none;
-
             }
 
 
@@ -335,11 +338,14 @@ footer {
 
      /* Footer */
         .footer-mid {
-            font-size: 7px;
+            font-size: 5px;
+        }
+
+        .footer-mid span {
+            font-size: 5px;
         }
 
         .footer-bottom {
             font-size: 7px;
         }
-
 }
