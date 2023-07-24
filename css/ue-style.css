@@ -136,6 +136,8 @@ body {
 
         .footer-mid {
             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 20px;
 
@@ -230,11 +232,11 @@ body {
 
     /* Footer */
         .footer-mid {
-            font-size: 7px;
+            font-size: 10px;
         }
 
         .footer-bottom {
-            font-size: 7px;
+            font-size: 10px;
         }
 
 }
@@ -261,11 +263,11 @@ body {
 
      /* Footer */
         .footer-mid {
-            font-size: 4px;
+            font-size: 7px;
         }
 
         .footer-mid span {
-            font-size: 4px;
+            font-size: 7px;
         }
 
         .footer-bottom {
