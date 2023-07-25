@@ -210,12 +210,6 @@ body {
                 color: var(--col-grey)!important;
                 font-size: 15px;
             }
-
-                .map {
-                    height: 100px;
-                    width: 100px;
-                    overflow:hidden
-                }
 footer {
     font-size: 12px;
 
