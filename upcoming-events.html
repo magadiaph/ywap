@@ -47,10 +47,30 @@
                                 </button>
 
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#tgif-celebration">TGIF Celebration</a></li>
-                                    <li><a class="dropdown-item" href="#ywap-anniversary">YWAP Anniversary</a></li>
-                                    <li><a class="dropdown-item" href="#district-conference">District Conference</a></li>
-                                    <li><a class="dropdown-item" href="#ils">International Leadership Summit</a></li>
+                                    <li><a class="dropdown-item"
+                                        href="#tgif-celebration"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop">
+                                            TGIF Celebration
+                                    </a></li>
+                                    <li><a class="dropdown-item" 
+                                        href="#district-conference"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop2">
+                                            District Conference
+                                    </a></li>
+                                    <li><a class="dropdown-item"
+                                        href="#ywap-anniversary"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop3">
+                                            YWAP Anniversary
+                                    </a></li>
+                                    <li><a class="dropdown-item"
+                                        href="#ils"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#staticBackdrop4">
+                                        International Leadership Summit
+                                    </a></li>
                                 </ul>
                             </div>
                         </li>
@@ -65,53 +85,478 @@
     </header>
     
     <main>
-        <section class="upcoming-events">
-            <div class="event-type">
-                 <h1>Upcoming Events</h1>
-                    <div class="events">
-                            <div class="first event">
-                                <div class="tgif-celebration img-container" id="tgif-celebration">
-                                    <img class="horizontal" src="images/tgif-celeb.jpg" alt="Youth's Group Picture">
-                                </div>
-                                <div class="description">
-                                    <span class="title">TGIF Celebration</span>
-                                    <span class="month">March</span>
-                            </div>
-                            </div>
+            <section class="upcoming-events">
+                        <div class="event-type">
+                            <h1 class="ue-title">
+                                Upcoming Events
+                            </h1>
+                                <div class="events">
+                                    <div class="first event">
+                                        <div class="tgif-celebration img-container btn" 
+                                            id="tgif-celebration"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                                <img class="horizontal"
+                                                src="images/tgifceleb.png"
+                                                alt="Youth's Group Picture">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">TGIF Celebration</span>
+                                            <span class="month">March</span>
+                                        </div>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" 
+                                            id="staticBackdrop" 
+                                            data-bs-backdrop="static" 
+                                            data-bs-keyboard="false" 
+                                            tabindex="-1" 
+                                            aria-labelledby="staticBackdropLabel" 
+                                            aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" 
+                                                            id="staticBackdropLabel">
+                                                                TGIF Celebration
+                                                            </h1>
+                                                            <button type="button" 
+                                                                class="btn-close" 
+                                                                data-bs-dismiss="modal" 
+                                                                aria-label="Close">
+                                                            </button>
+                                                        </div>
 
-                            <div class="second event">
-                                <div class="district-conference img-container" id="district-conference">
-                                    <img class="horizontal" src="images/conference.jpg" alt="Standing people">
-                                </div>
-                                <div class="description">
-                                    <span class="title">District Conference</span>
-                                    <span class="month">June</span>
-                                </div>
-                            </div>
-                      
+                                                        <div class="modal-body">
+                                                            <div>
+                                                                <div id="carouselExampleIndicators" class="carousel slide">
+                                                                        <div class="carousel-indicators">
+                                                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                        </div>
 
-                            <div class="third event">
-                                <div class="ywap-anniversary img-container" id="ywap-anniversary">
-                                    <img class="horizontal" src="images/anniv.jpg" alt="Youth's Group Picture">
-                                </div>
-                                <div class="description">
-                                    <span class="title">YWAP Anniversary</span>
-                                    <span class="month">August</span>
-                                </div>
-                            </div>
+                                                                        <div class="carousel-inner">
+                                                                                <div class="carousel-item active carousel-fade">
+                                                                                        <img src="images/CELEB-car1.png"
+                                                                                        class="d-block w-100"
+                                                                                        alt="youths playing a game in a line">
+                                                                                </div>
+                                                                                <div class="carousel-item carousel-fade">
+                                                                                        <img src="images/CELEB-car2.png"
+                                                                                        class="d-block w-100" alt="youths playing a pose">
+                                                                                </div>
+                                                                                <div class="carousel-item carousel-fade">
+                                                                                        <img src="images/CELEB-car3.png"
+                                                                                        class="d-block w-100"
+                                                                                        alt="youths playing a pose holding their food">
+                                                                                </div>
+                                                                        </div>
 
-                            <div class="fourth event">
-                                <div class="ils img-container" id="ils">
-                                    <img class="horizontal" src="images/ils.jpg" alt="Youth's Group Picture">
+                                                                        <button class="carousel-control-prev"
+                                                                                type="button"
+                                                                                data-bs-target="#carouselExampleIndicators"
+                                                                                data-bs-slide="prev">
+                                                                                    <span class="carousel-control-prev-icon"
+                                                                                            aria-hidden="true">
+                                                                                    </span>
+                                                                                    <span class="visually-hidden">
+                                                                                            Previous
+                                                                                        </span>
+                                                                        </button>
+                                                                        <button class="carousel-control-next"
+                                                                            type="button"
+                                                                            data-bs-target="#carouselExampleIndicators"
+                                                                            data-bs-slide="next">
+                                                                                <span class="carousel-control-next-icon"
+                                                                                        aria-hidden="true">
+                                                                                </span>
+                                                                                <span class="visually-hidden">Next</span>
+                                                                        </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="second event">
+                                        <div class="district-conference img-container btn"
+                                            id="district-conference"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop2">
+                                            <img class="horizontal"
+                                                src="images/conference2.png"
+                                                alt="Standing people">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">
+                                                District Conference
+                                            </span>
+                                            <span class="month">
+                                                June
+                                            </span>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" 
+                                                id="staticBackdrop2" 
+                                                data-bs-backdrop="static" 
+                                                data-bs-keyboard="false" 
+                                                tabindex="-1" 
+                                                aria-labelledby="staticBackdropLabel" 
+                                                aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" 
+                                                    id="staticBackdropLabel2">District Conference</h1>
+                                                    <button type="button" 
+                                                    class="btn-close" 
+                                                    data-bs-dismiss="modal" 
+                                                    aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div>
+                                                            <div id="carouselExampleIndicators2"
+                                                            class="carousel slide">
+                                                                <div class="carousel-indicators">
+                                                                <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators2"
+                                                                data-bs-slide-to="0"
+                                                                class="active"
+                                                                aria-current="true"
+                                                                aria-label="Slide 1"></button>
+                                                                <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators2"
+                                                                data-bs-slide-to="1"
+                                                                aria-label="Slide 2"></button>
+                                                                <button type="button"
+                                                                data-bs-target="#carouselExampleIndicators2"
+                                                                data-bs-slide-to="2"
+                                                                aria-label="Slide 3"></button>
+                                                                </div>
+                                                                <div class="carousel-inner">
+                                                                <div class="carousel-item active carousel-fade">
+                                                                    <img src="images/conference (1).png"
+                                                                    class="d-block w-100"
+                                                                    alt="youth leaders">
+                                                                </div>
+                                                                <div class="carousel-item carousel-fade">
+                                                                    <img src="images/conference (2).png"
+                                                                    class="d-block w-100"
+                                                                    alt="youth leader with a microphone">
+                                                                </div>
+                                                                <div class="carousel-item carousel-fade">
+                                                                    <img src="images/conference2.png"
+                                                                    class="d-block w-100"
+                                                                    alt="youth leaders">
+                                                                </div>
+                                                                </div>
+
+                                                                <button class="carousel-control-prev"
+                                                                type="button"
+                                                                data-bs-target="#carouselExampleIndicators2"
+                                                                data-bs-slide="prev">
+                                                                <span class="carousel-control-prev-icon"
+                                                                aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Previous</span>
+                                                                </button>
+
+                                                                <button class="carousel-control-next"
+                                                                type="button"
+                                                                data-bs-target="#carouselExampleIndicators2"
+                                                                data-bs-slide="next">
+                                                                <span class="carousel-control-next-icon"
+                                                                aria-hidden="true"></span>
+                                                                <span class="visually-hidden">Next</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="third event">
+                                        <div class="ywap-anniversary img-container btn"
+                                            id="ywap-anniversary"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop3">
+                                            <img class="horizontal"
+                                            src="images/anniv2.png"
+                                            alt="Youth's Group Picture">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">
+                                                YWAP Anniversary
+                                            </span>
+                                            <span class="month">
+                                                August
+                                            </span>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" 
+                                            id="staticBackdrop3" 
+                                            data-bs-backdrop="static" 
+                                            data-bs-keyboard="false" 
+                                            tabindex="-1" 
+                                            aria-labelledby="staticBackdropLabel" 
+                                            aria-hidden="true">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" 
+                                                            id="staticBackdropLabel3">
+                                                            YWAP Anniversary
+                                                        </h1>
+                                                        <button type="button" 
+                                                            class="btn-close" 
+                                                            data-bs-dismiss="modal" 
+                                                            aria-label="Close">
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div>
+                                                            <div id="carouselExampleIndicators3"
+                                                                class="carousel slide">
+                                                                <div class="carousel-indicators">
+                                                                    <button type="button"
+                                                                        data-bs-target="#carouselExampleIndicators3"
+                                                                        data-bs-slide-to="0"
+                                                                        class="active"
+                                                                        aria-current="true"
+                                                                        aria-label="Slide 1">
+                                                                    </button>
+                                                                    <button type="button"
+                                                                        data-bs-target="#carouselExampleIndicators3"
+                                                                        data-bs-slide-to="1"
+                                                                        aria-label="Slide 2">
+                                                                    </button>
+                                                                    <button type="button"
+                                                                        data-bs-target="#carouselExampleIndicators3"
+                                                                        data-bs-slide-to="2"
+                                                                        aria-label="Slide 3">
+                                                                    </button>
+                                                                </div>
+                                                                <div class="carousel-inner">
+                                                                    <div class="carousel-item active carousel-fade">
+                                                                        <img src="images/car_anniv1.png"
+                                                                            class="d-block w-100"
+                                                                            alt="youth worship leader">
+                                                                    </div>
+                                                                    <div class="carousel-item carousel-fade">
+                                                                        <img src="images/car_anniv2.png"
+                                                                            class="d-block w-100"
+                                                                            alt="youths playing a game">
+                                                                    </div>
+                                                                    <div class="carousel-item carousel-fade">
+                                                                        <img src="images/car_anniv3.png"
+                                                                            class="d-block w-100"
+                                                                            alt="a praying youth">
+                                                                    </div>
+                                                                </div>
+                                                                <button class="carousel-control-prev"
+                                                                    type="button"
+                                                                    data-bs-target="#carouselExampleIndicators3"
+                                                                    data-bs-slide="prev">
+                                                                    <span class="carousel-control-prev-icon"
+                                                                    aria-hidden="true">
+                                                                    </span>
+                                                                    <span class="visually-hidden">
+                                                                        Previous
+                                                                    </span>
+                                                                </button>
+                                                                <button class="carousel-control-next"
+                                                                    type="button"
+                                                                    data-bs-target="#carouselExampleIndicators3"
+                                                                    data-bs-slide="next">
+                                                                    <span class="carousel-control-next-icon"
+                                                                    aria-hidden="true">
+                                                                    </span>
+                                                                    <span class="visually-hidden">
+                                                                        Next
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="fourth event">
+                                        <div class="ils img-container btn"
+                                            id="ils"
+                                            type="button"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop4">
+                                            <img class="horizontal"
+                                            src="images/ils2.png"
+                                            alt="Youth's Group Picture">
+                                        </div>
+                                        <div class="description">
+                                            <span class="title">
+                                                    International Leadership Summit
+                                            </span>
+                                            <span class="month">
+                                                    December
+                                            </span>
+                                        </div>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" 
+                                            id="staticBackdrop4" 
+                                            data-bs-backdrop="static" 
+                                            data-bs-keyboard="false" 
+                                            tabindex="-1" 
+                                            aria-labelledby="staticBackdropLabel" 
+                                            aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" 
+                                                                id="staticBackdropLabel2">
+                                                                International Leadership Summit
+                                                            </h1>
+                                                            <button type="button" 
+                                                                class="btn-close" 
+                                                                data-bs-dismiss="modal" 
+                                                                aria-label="Close">
+                                                            </button>
+                                                        </div>
+
+                                                        <div class="modal-body">
+                                                            <div>
+                                                                    <div id="carouselExampleIndicators4"
+                                                                        class="carousel slide">
+                                                                        <div class="carousel-indicators">
+                                                                            <button type="button"
+                                                                                data-bs-target="#carouselExampleIndicators4"
+                                                                                data-bs-slide-to="0"
+                                                                                class="active"
+                                                                                aria-current="true"
+                                                                                aria-label="Slide 1">
+                                                                            </button>
+                                                                            <button type="button"
+                                                                                data-bs-target="#carouselExampleIndicators4"
+                                                                                data-bs-slide-to="1"
+                                                                                aria-label="Slide 2">
+                                                                            </button>
+                                                                            <button type="button"
+                                                                                data-bs-target="#carouselExampleIndicators4"
+                                                                                data-bs-slide-to="2"
+                                                                                aria-label="Slide 3">
+                                                                            </button>
+                                                                        </div>
+
+                                                                        <div class="carousel-inner">
+                                                                            <div class="carousel-item active carousel-fade">
+                                                                                <img src="images/car-ils1.png"
+                                                                                class="d-block w-100"
+                                                                                alt="youth leaders">
+                                                                            </div>
+                                                                            <div class="carousel-item carousel-fade">
+                                                                                <img src="images/car-ils2.png"
+                                                                                class="d-block w-100"
+                                                                                alt="youth leaders">
+                                                                            </div>
+                                                                            <div class="carousel-item carousel-fade">
+                                                                                <img src="images/car-ils3.png"
+                                                                                class="d-block w-100"
+                                                                                alt="youth leaders">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <button class="carousel-control-prev"
+                                                                            type="button"
+                                                                            data-bs-target="#carouselExampleIndicators4"
+                                                                            data-bs-slide="prev">
+                                                                            <span class="carousel-control-prev-icon"
+                                                                                aria-hidden="true">
+                                                                            </span>
+                                                                            <span class="visually-hidden">
+                                                                                Previous
+                                                                            </span>
+                                                                        </button>
+
+                                                                        <button class="carousel-control-next"
+                                                                            type="button"
+                                                                            data-bs-target="#carouselExampleIndicators4"
+                                                                            data-bs-slide="next">
+                                                                            <span class="carousel-control-next-icon"
+                                                                                aria-hidden="true">
+                                                                            </span>
+                                                                            <span class="visually-hidden">
+                                                                                Next
+                                                                            </span>
+                                                                        </button>
+                                                                    </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>  
+                                        </div>
+                                    </div>                                   
                                 </div>
-                                <div class="description">
-                                    <span class="title">International Leadership Summit</span>
-                                    <span class="month">December</span>
+                        </div>
+            </section>
+
+            <section class="update-me">
+                <form class="notif-form">
+                    <h3 class="question">Want to be notified?</h3>
+                    
+                    <input class="emailAddress" 
+                        type="email" 
+                        id="emailAddress" 
+                        name="emailAddress" 
+                        placeholder="ex. your-email@gmail.com" 
+                        required>
+                        </input>
+                    <input class="update-me-btn"
+                        type="submit"
+                        id="update-me-btn" 
+                        data-bs-toggle="modal"
+                        data-bs-target="#confirmationModal"
+                        name="update-me-btn"
+                        type="button"
+                        value="Yup! Keep me updated! ">
+                     </input>
+                        <!-- Modal -->
+                        <div class="modal fade" 
+                            id="confirmationModal" 
+                            tabindex="-1" 
+                            aria-labelledby="confirmationModalLabel"
+                            aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5"
+                                                id="confirmationModalLabel">
+                                                Noted!
+                                                <i class="fa-regular fa-bell fa-shake"></i>
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            The notification will reach you a month, week, and a day before the events respectively.
+                                            We'll be pleased to have you joining us!
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                 </div>
-            </div>
-        </section>
+                        </div>
+                </form>
+            </section>
+
     </main>
 
     <footer class="container-sm">
@@ -149,9 +594,9 @@
         </section>
 
         <section class="footer-bottom">
-          <i class="fa-brands fa-facebook fa-bounce"></i>
+          <a href=""><i class="fa-brands fa-facebook fa-bounce"></i></a>
           <span>2023 YWAP. All Rights Reserved</span>
-          <i class="fa-brands fa-youtube fa-bounce"></i>
+          <a href=""><i class="fa-brands fa-youtube fa-bounce"></i></a>
         </section>
   </footer>
 

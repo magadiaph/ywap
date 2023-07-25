@@ -25,55 +25,85 @@ body {
 }
 
     nav {
-        height: 75px;
+        height: 65px;
         width: 100%;
+        padding: 0;
+        position: fixed !important;
         
         /* background-color: var(--col-white); */
     }
+        .navbar {
+            --bs-navbar-padding-y: 0;
+            --bs-navbar-hover-color: rgba(var(--col-orange) , 0.8);
+        }
 
         .nav-item {
             background-color: var(--col-white);
         }
 
+  
+        .nav-link.active {
+            font-weight: bold;
+        }
+
         .nav-link:hover {
-            color: var(--col-orange);
+            font-weight: bold;
+            border: 2px solid var(--col-grey);
+            background-color: var(--col-yellow);
+            transition: .5s ease;
         }
 
         .dropdown-menu {
             background-color: var(--col-white);
+            
+            width: max-content;
         }
+            .btn-group:hover .dropdown-menu {
+                margin-top: 40px;
+                position: absolute;
+                display: block;
+                transition: ease-in-out 0.5;
+            }
+
             .dropdown-item:hover {
-                color: var(--col-orange);
+                color: var(--col-white);
+                background-color: var(--col-yellow);
             }
 
 
         .nav-link {
             color: var(--col-grey) !important;
         }
-    
-        .upcoming-events {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: calc(100vh - 195px);
-            width: 100%;
-    
+
+        main {
+            display: block;
+            height: 100vh;
+
             background: url(../images/bg_happening-now.png);
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             background-color: var(--col-blue);
-    
-            align-items: center;
-    
-            color: var(--col-white);
-            font-weight: bolder;
-            text-align: center;
         }
 
-                .event-type h1 {
+        .upcoming-events {
+            height: 70vh;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+    
+            color: var(--col-white);
+
+            text-align: center;
+            align-items: center;
+            align-content: center;
+        }
+
+                .ue-title {
+                    margin-top: 75px;
                     color: var(--col-grey);
-                    font-size: 100px;
+                    font-size: 75px;
                     font-style: italic;
                     text-shadow: 0px 5px 10px rgba(241, 241, 241, 0.536);
 
@@ -81,28 +111,37 @@ body {
 
             .events {
                 display: flex;
+                flex-wrap: wrap;
                 justify-content: center;
-                height: 300px;
-                width: 80vw;
+                align-items: center;
             }
 
                 .event {
-                    width: 23%;
-                    margin: 5px 3px;
+                    height: 200px;
+                    width: 300px; 
+                    margin: 15px 5px;
+                    border: none;
                 }
+
+                    .event:hover {
+                        height: 250px;
+                        width: 350px;
+                        margin: 0px 5px;
+                        transition: .5s ease;
+                    }
                     
                     .description {
-                        font-size: small;
-                        padding: 5px;
-                        background-color: var(--col-blue);
+                        display: flex;
+                        flex-direction: column;
+                        font-size: medium;
+                        font-weight: bold;
+                        font-variant-caps: all-small-caps;
+                        color: var(--col-grey);
                     }
                         .month {
-                            display: block;
-                            padding: 0 5px;
-
                             font-weight: normal;
                             font-style: italic;
-                            color: var(--col-white);
+                            color: var(--col-grey);
                             text-shadow: none;
                         }
 
@@ -111,8 +150,6 @@ body {
                         width: 100%;
 
                         overflow: hidden;
-
-                        border-top-left-radius: 15px;
                     }
 
                         .img {
@@ -126,7 +163,53 @@ body {
                                 height: 100%;
                             }
 
+            .modal-title {
+                color: var(--col-grey);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
 
+            .update-me {
+                margin-top: 25px;
+                height: 30vh;
+                color: var(--col-grey);
+
+                /* background-color: aquamarine; */
+            }
+                .notif-form {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: baseline;
+                    align-items: center;
+                }
+                    .question {
+                        font-weight: bold;
+                        font-variant-caps: all-small-caps;
+                    }
+
+                    .emailAddress {
+                        width: 290px;
+                        padding: 8px 8px;
+                        margin-bottom: 15px;
+                        border: 2px solid var(--col-grey); 
+                    }
+
+
+                    .update-me-btn {
+                        padding: 16px 48px;
+                        color: var(--col-grey);
+                        font-variant-caps: all-small-caps;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        border: 3px solid var(--col-yellow);
+                    }
+                        .update-me-btn:hover {
+                            background-color: var(--col-yellow);
+                            color: var(--col-white);
+                            transition: .5s ease;
+                        }
+
+            
 
     footer {
         font-size: 12px;
@@ -194,28 +277,26 @@ body {
                     margin: 0px 7px
                 }
 
-@media screen and (max-width:1000px) {
-    .event-type h1 {
-    font-size: 75px;
+@media only screen and  (max-width:1024px) {
+    main {
+        height: 125vh;
     }
 
-    .events {
-        height: 270px;
+/* 
+    .event {
+        height: 150px;
+        width: 250px;
+        margin: 15px 5px;
     }
 
-    .description {
-        font-size: smaller;
-    }
-
-    .description {
-        font-size: 12px;
-    }
-        .month {
-            font-size: 10px;
+        .event:hover {
+            height: 150px;
+            width: 250px;
         }
+} */
+    
 }
-
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     .nav-item {
         font-size: small;
     }
@@ -224,19 +305,12 @@ body {
         font-size: small;
     }
 
-    .event-type h1 {
-        font-size: 50px;
+    main {
+        height: 100vh;
     }
 
-    .events {
-        height: 250px;
-    }
-
-    .description {
-        font-size: 9px;
-    }
-        .month {
-            font-size: 8px;
+        .upcoming-events {
+            align-content: center;
         }
 
     /* Footer */
@@ -250,7 +324,8 @@ body {
 
 }
 
-@media screen and (max-width:425px) {
+@media only screen and (max-width:425px) {
+
     .nav-item {
         font-size: x-small;
     }
@@ -259,17 +334,40 @@ body {
         font-size: x-small;
     }
 
-    .event-type h1 {
-        font-size: 25px;
+    main {
+        height: 200vh;
     }
 
-    .description {
-        font-size: 7px;
-    }
-        .month {
-            font-size: 6px;
+        .upcoming-events {
+            align-content: center;
+            height: 135vh;
         }
 
+        .event-type {
+            height: 123vh;
+        }
+
+        .event {
+            height: 200px;
+            width: 300px;
+        }
+
+            .ue-title {
+                font-size: xx-large;
+                font-weight: bold;
+            }
+
+                .description {
+                    font-size: small;
+                }
+                    .month {
+                        font-size: small;
+                    }
+
+        .update-me {
+            margin-top: 250px;
+        }
+        
      /* Footer */
         .footer-mid {
             font-size: 7px;

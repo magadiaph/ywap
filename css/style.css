@@ -256,7 +256,7 @@ footer {
             margin: 0px 7px
         }
 
-@media screen and (max-width:768px) {
+@media only screen and (max-width:768px) {
     .nav-item {
         font-size: x-small;
     }
@@ -336,7 +336,7 @@ footer {
 
 }
 
-@media screen and (max-width:425px) {
+@media only screen and (max-width:425px) {
     .nav-item {
         font-size: x-small;
     }
