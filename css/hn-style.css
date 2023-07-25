@@ -27,6 +27,7 @@ body {
     nav {
         height: 75px;
         width: 100%;
+        padding: 0;
         z-index: 2;
     }
         .navbar {
@@ -107,90 +108,8 @@ body {
 
                 .explanation {
                     padding-top: 2%;
-
                 }
 
-        .img-containers {
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            
-            height: 400px;
-            width: 60vw;
-
-            margin: 5px 5px;
-        }
-
-            .set1 {
-                height: 50%;
-                width: 100%;
-                display: flex;
-                align-items: stretch;
-
-
-                overflow: hidden;
-            }
-
-            .set2 {
-                height: 50%;
-
-                display: flex;
-                flex-direction: row;
-            
-                overflow: hidden;
-            } 
-
-            .container {
-                position: relative;
-
-            }
-
-
-            .image {
-                width: 100%;
-                object-position: center;
-                object-fit: fill;
-                opacity: 1;
-                transition: .5s ease;
-                backface-visibility: hidden;
-            }
-
-            .image3 {
-                width: 100%;
-                opacity: 1;
-                transition: .5s ease;
-                backface-visibility: hidden;
-            }
-            
-            .middle {
-                transition: .5s ease;
-                opacity: 0;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%)
-            }
-            
-            .container:hover .image {
-                opacity: 0.3;
-            }
-
-            .container:hover .image3 {
-                opacity: 0.3;
-            }
-            
-            .container:hover .middle {
-                opacity: 1;
-            }
-            
-            .text {
-                background-color: var(--col-orange);
-                color: white;
-                font-size: 16px;
-                padding: 16px 32px;
-            }
     .hn-carousel {
         width: 70%;
         display: flex;

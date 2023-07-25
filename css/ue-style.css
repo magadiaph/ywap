@@ -29,8 +29,6 @@ body {
         width: 100%;
         padding: 0;
         position: fixed !important;
-        
-        /* background-color: var(--col-white); */
     }
         .navbar {
             --bs-navbar-padding-y: 0;
@@ -66,7 +64,7 @@ body {
             }
 
             .dropdown-item:hover {
-                color: var(--col-white);
+                color: var(--col-grey);
                 background-color: var(--col-yellow);
             }
 
